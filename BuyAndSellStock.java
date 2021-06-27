@@ -5,7 +5,7 @@ public class BuyAndSellStock {
     public static int maxProfit(int[] prices) {
         int maxprof=0;
         int minStock = Integer.MAX_VALUE;
-        for (int i=0; i< prices.length-1; i++){
+        for (int i=0; i< prices.length; i++){
            if (prices[i]<minStock){
                minStock = prices[i];
            }
@@ -16,6 +16,6 @@ public class BuyAndSellStock {
         return maxprof;
     }
     public static void main(String[] args){
-        System.out.println(maxProfit(new int[]{7,1,5,3,6,4}));
+        System.out.println(maxProfit(new int[]{7,1,5,3,6,7}));
     }
 }

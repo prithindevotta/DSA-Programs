@@ -4,16 +4,16 @@ import java.util.*;
 
 public class AltPosNeg {
     static int[] rearrange(int[] arr, int n) {
-        int i=0, temp;
+        int i =0, temp;
         for (int j=0; j<n; j++){
-            if (arr[j]<0){
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            if (arr[j]<0 && i<n){
+                temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
                 i++;
             }
         }
-        int k = 0, l = i;
+        int  k=0, l=i;
         while (k<l && l<n && arr[k]<0){
             temp = arr[k];
             arr[k] = arr[l];
