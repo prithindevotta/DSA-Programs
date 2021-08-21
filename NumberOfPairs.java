@@ -52,28 +52,28 @@ public class NumberOfPairs {
     }
     static int upper_bound(long[] arr, int s, long u){
         int f = s;
-        int l = arr.length;
-        while (f!=l){
+        int l = arr.length-1;
+        while (f<=l){
             int mid = (f+l)/2;
             if (arr[mid]<=u){
                 f = mid+1;
             }
             else {
-                l = mid;
+                l = mid-1;
             }
         }
         return f;
     }
     static int lower_bound(long[] arr, int s, long l){
         int f = s;
-        int e = arr.length;
-        while (f!=e){
+        int e = arr.length-1;
+        while (f<=e){
             int mid = (f+e)/2;
             if (arr[mid]<l){
                 f = mid+1;
             }
             else {
-                e = mid;
+                e = mid-1;
             }
         }
         return f;
