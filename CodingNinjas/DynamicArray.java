@@ -51,7 +51,7 @@ public class DynamicArray {
 
     public int get(int index){
         if (index>=nextIndex){
-            return -1;
+            return 0;
         }
         return arr[index];
     }
