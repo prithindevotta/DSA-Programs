@@ -15,13 +15,10 @@ public class CircularLinkedList {
         if(head == null){
             return false;
         }
-        if(head.next == null){
-            return false;
-        }
         Node temp = head.next;
-        while (temp.next != null && temp.next != head){
+        while (temp != null && temp != head){
             temp = temp.next;
         }
-        return temp.next != null;
+        return temp != null;
     }
 }
