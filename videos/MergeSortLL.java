@@ -1,6 +1,5 @@
 package cp.videos;
 
-import cp.AddTwoNumbersLL;
 
 public class MergeSortLL {
     static class Node
@@ -102,7 +101,7 @@ public class MergeSortLL {
         System.out.println();
     }
     public static void main(String[] args){
-        Node head = new Node(1);
+        Node head = new Node(8);
         head.next = new Node(1);
         head.next.next = new Node(7);
         head.next.next.next = new Node(6);
