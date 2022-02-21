@@ -23,6 +23,7 @@ public class CountInversions {
         return inv;
     }
 
+
     private static long merge(long[] arr, int m, int l, int r) {
         int i=0, j=0, k=l;
         long[] left = Arrays.copyOfRange(arr, l, m+1);
