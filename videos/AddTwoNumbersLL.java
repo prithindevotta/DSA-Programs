@@ -1,4 +1,4 @@
-package cp;
+package cp.videos;
 
 import cp.videos.*;
 public class AddTwoNumbersLL {

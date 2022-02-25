@@ -1,4 +1,4 @@
-package cp;
+package cp.videos;
 
 public class AddOneToLinkedList {
     class Node{

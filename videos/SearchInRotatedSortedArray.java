@@ -17,7 +17,9 @@ public class SearchInRotatedSortedArray {
             }
             mid = s+(e-s)/2;
         }
-
+        if(arr.get(s) > arr.get(0)){
+            return 0;
+        }
         return s;
     }
 
